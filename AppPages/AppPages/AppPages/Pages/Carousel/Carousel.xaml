@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="AppPages.Pages.Carousel.Carousel"
+              xmlns:local="clr-namespace:AppPages.Pages.Carousel">
+
+    <!--Home-->
+    <local:Carousel_Home />
+    
+    <!--Pages-->
+    <local:Carousel_Pages />
+    
+    <!--Start-->
+    <local:Carousel_Start />
+
+</CarouselPage>

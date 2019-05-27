@@ -11,7 +11,7 @@ namespace AppPages
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new AppPages.Pages.Carousel.Carousel();
         }
 
         protected override void OnStart()
