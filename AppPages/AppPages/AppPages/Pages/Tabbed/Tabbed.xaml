@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="AppPages.Pages.Tabbed.Tabbed"
+            xmlns:local="clr-namespace:AppPages.Pages.Tabbed">
+
+    <local:ContentPage1 Title="Content Page 01"
+                        Icon="clock.png"/>
+
+    <!--Adicionando uma navigation page a tabbedpage-->
+    <NavigationPage Title="Page 01" 
+                    Icon="clock.png">
+        <x:Arguments>
+            
+            <ContentPage>
+
+                <Label Text="Content of page 01"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+            </ContentPage>
+            
+        </x:Arguments>
+        
+    </NavigationPage>
+
+    <ContentPage Title="Page 02" 
+                 Icon="clock.png">
+
+        <Label Text="Content of page 02"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+    </ContentPage>
+
+</TabbedPage>

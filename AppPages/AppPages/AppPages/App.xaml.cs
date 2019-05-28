@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppPages.Pages.Tabbed;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,12 +12,14 @@ namespace AppPages
         {
             InitializeComponent();
 
+            MainPage = new Tabbed();
+
             //chamada da NavigationPage
-            MainPage = new NavigationPage(new Pages.Navigation.WelcomePage()) {
-                //alterar a cor de fundo e do texto da Navigation Bar
-                BarTextColor = Color.White,
-                BarBackgroundColor = Color.Gray
-            };
+            //MainPage = new NavigationPage(new Pages.Navigation.WelcomePage()) {
+            //    //alterar a cor de fundo e do texto da Navigation Bar
+            //    BarTextColor = Color.White,
+            //    BarBackgroundColor = Color.Gray
+            //};
         }
 
         protected override void OnStart()
