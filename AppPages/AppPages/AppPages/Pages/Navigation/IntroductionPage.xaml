@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPages.Pages.Navigation.IntroductionPage"
+             Title="Introduction"
+             NavigationPage.HasBackButton="False">
+    
+    <!--Para esconder o botão de Voltar na barra de navegação usar o comando NavigationPage.HasBackButton="False" -->
+    
+    <ContentPage.Content>
+        <StackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+
+            <Label 
+                Text="This is how the app works." 
+                HorizontalOptions="Center"/>
+            
+            <Button 
+                Text="Back"
+                Clicked="BackPage"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

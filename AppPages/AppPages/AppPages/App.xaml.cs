@@ -11,7 +11,12 @@ namespace AppPages
         {
             InitializeComponent();
 
-            MainPage = new AppPages.Pages.Carousel.Carousel();
+            //chamada da NavigationPage
+            MainPage = new NavigationPage(new Pages.Navigation.WelcomePage()) {
+                //alterar a cor de fundo e do texto da Navigation Bar
+                BarTextColor = Color.White,
+                BarBackgroundColor = Color.Gray
+            };
         }
 
         protected override void OnStart()
