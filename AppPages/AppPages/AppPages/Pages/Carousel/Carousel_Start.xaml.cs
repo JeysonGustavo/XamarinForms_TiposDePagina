@@ -16,5 +16,12 @@ namespace AppPages.Pages.Carousel
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void CallNavigationPage(object sender, EventArgs args)
+        {
+            //trocar a página do carousel para o navigation, informando que essa página é um Navigation Page
+            App.Current.MainPage = new NavigationPage(new Navigation.Navigation_Home());
+        }
+
+    }
 }

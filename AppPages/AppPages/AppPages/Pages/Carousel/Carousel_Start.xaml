@@ -11,7 +11,10 @@
                 TextColor="Blue"
                 HorizontalOptions="CenterAndExpand" />
 
-            <Button Image="Play.png" BackgroundColor="Transparent"/>
+            <Button 
+                Image="Play.png" 
+                BackgroundColor="Transparent"
+                Clicked="CallNavigationPage"/>
 
         </StackLayout>
     </ContentPage.Content>
