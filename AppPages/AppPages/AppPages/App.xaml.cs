@@ -12,7 +12,11 @@ namespace AppPages
         {
             InitializeComponent();
 
-            MainPage = new Tabbed();
+            //Master Detail
+            MainPage = new Pages.Master.MasterPage();
+
+            //Tabbed page
+            //MainPage = new Tabbed();
 
             //chamada da NavigationPage
             //MainPage = new NavigationPage(new Pages.Navigation.WelcomePage()) {
